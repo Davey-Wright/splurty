@@ -1,2 +1,6 @@
-<h1><%= @quote.saying %></h1>
-<h2> - <%= @quote.author %></h2>
+
+<h1 class='quote col-md-9 mt-5'><%= @quote.saying %></h1>
+<div class='author ml-auto mt-4 mb-5 d-flex flex-column'>
+	<h2 class='h4'> Arnold Schwarzenneger</h2>
+	<h3 class='h6 ml-md-auto'> - <%= @quote.author %></h3>
+</div>

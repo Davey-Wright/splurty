@@ -8,18 +8,29 @@
   </head>
 
   <body>
-    <header id='primary-navbar' class='d-flex align-items-baseline justify-content-around py-4'>
 
-        <%= link_to 'SPLURTY', '#', :class => 'bold h4 align-self-center', :id => 'logo' %>
+    <header id='primary-navbar' class='d-flex align-items-center justify-content-around px-sm-5'>
 
-        <h1 id='slogan' class='h6 hidden-sm-down'><em>Splurting out Arnold Schwarzenneger quotes for fun!</em></h1>
+        <%= link_to 'SPLURTY', '#', :class => 'bold h4', :id => 'logo' %>
 
-        <nav>
+        <h1 id='slogan' class='h6 hidden-md-down mr-auto ml-5 small'> - Splurting out Arnold Schwarzenneger quotes for fun!</h1>
+
+        <nav id='primary-navigation'>
           <%= link_to 'Contribute', '#', :class => 'pr-2 pr-sm-4'  %>
           <%= link_to 'About Us', '#', :class => 'pl-2 pl-sm-4' %>
         </nav>
 
     </header>
-    <%= yield %>
+
+    <main class='d-flex flex-column align-items-center px-5 mt-4'>
+      <h3 class='h4 pt-5 mr-auto'>SPLURTY / no. #29 - <span class='blurb text-muted'>We could all use a little more Arnie in our lives.</span></h3>
+      <%= yield %>
+    </main>
+
+    <footer class='d-flex flex-column align-items-center justify-content-center py-4 px-5'>
+        <%= link_to 'This isn\'t enough, I want more.', '#', class: 'mb-auto mr-md-auto next-quote' %>
+        <p class='mt-auto ml-md-auto small'>Proudly built by Davey in Bridgend, Wales.</p>
+    </footer>
+
   </body>
 </html>
