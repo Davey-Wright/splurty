@@ -1,7 +1,13 @@
-<h1>Enter your details for a new quote</h1>
 
-<%= simple_form_for @quote do |f| %>
-	<%= f.input :saying %>
-	<%= f.input :movie_reference %>
-	<%= f.submit :'Create', class: 'btn create' %>
-<% end %>
+<div class='d-flex align-items-center justify-content-around flex-column'>
+	<div class='col-10'>
+
+		<h2 class='h4 mb-4'>Enter the details of your favourite Arnie movie quote.</h2>
+
+		<%= simple_form_for @quote do |f| %>
+			<%= f.input :saying %>
+			<%= f.input :movie_reference %>
+			<%= f.submit :'Create', class: 'btn create' %>
+		<% end %>
+	</div>
+</div>

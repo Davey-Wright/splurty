@@ -2,7 +2,7 @@
 
 html {
 	font-size: 14px;
-	line-height: 1.5rem;
+	line-height: 1.5em;
 }
 
 a {
@@ -12,6 +12,10 @@ a {
 a:hover {
 	text-decoration: none;
 	color: #d63231;
+}
+
+form {
+	width: 100%;
 }
 
 header {
