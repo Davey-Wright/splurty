@@ -1,0 +1,2 @@
+class DropQuote < ApplicationRecord
+end

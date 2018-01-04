@@ -11,7 +11,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #f84342;
+	color: #d63231;
 }
 
 header {
@@ -70,6 +70,17 @@ main {
 	font-style: italic;
 	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;;
 }
+
+.create {
+	background: #f84342;
+	color: white;
+	cursor: pointer;
+}
+
+.create:hover {
+	background: #d63231;
+}
+
 
 
 @include media-breakpoint-up(sm) {
