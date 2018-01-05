@@ -32,8 +32,8 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
             <div class="modal-body">
-                <%= f.input :saying %>
-                <%= f.input :movie_reference %>
+                <%= f.input :saying, label: 'What is your favourite Arnie movie Quote?', placeholder: 'Your clothes, give them to me, now!' %>
+                <%= f.input :movie_reference, label: 'What movie is it from?', placeholder: 'Terminator' %>
             </div>
             <div class="modal-footer">
               <%= f.submit :'Create', class: 'btn create' %>

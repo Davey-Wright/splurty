@@ -28,6 +28,9 @@ a:hover, a:focus, a:active {
 	outline: none;
 }
 
+::selection {
+  background-color: rgba( 254, 69, 70, 0.7 );
+}
 
 abbr[title] {
 	text-decoration: none;
@@ -35,6 +38,10 @@ abbr[title] {
 
 form {
 	width: 100%;
+}
+
+.quote-id {
+	color: $brand-color;
 }
 
 .fixed {
