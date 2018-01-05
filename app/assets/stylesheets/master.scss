@@ -22,10 +22,12 @@ a {
 	color: #222;
 }
 
-a:hover {
+a:hover, a:focus, a:active {
 	text-decoration: none;
 	color: $brand-color-hover;
+	outline: none;
 }
+
 
 abbr[title] {
 	text-decoration: none;
