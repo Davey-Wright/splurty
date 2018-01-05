@@ -21,6 +21,23 @@ img {
 	height: auto;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+}
+
 
 /* ----- Links & Typography ----- */
 html {
@@ -78,12 +95,6 @@ a:hover, a:focus, a:active {
 
 /* ----- Layout ----- */
 
-body {
-  position: relative;
-  margin: 0;
-  min-height: 100%;
-}
-
 header {
 	top: 0;
 	height: 100px;
@@ -91,10 +102,15 @@ header {
 }
 
 footer {
+	position: absolute;
 	background: white;
 	width: 100%;
 	bottom: 0;
 	height: 150px;
+}
+
+main {
+	padding-bottom: 150px;
 }
 
 
