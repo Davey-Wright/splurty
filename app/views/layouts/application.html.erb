@@ -9,15 +9,15 @@
 
   <body>
 
-    <header id='primary-navbar' class='d-flex align-items-center justify-content-around px-sm-5'>
+    <header class='d-flex align-items-center justify-content-around px-sm-5'>
 
-        <%= link_to 'SPLURTY', root_path, :class => 'bold h4', :id => 'logo' %>
+        <%= link_to 'SPLURTY', root_path, :class => 'bold brand-color h4 mb-0', :id => 'logo' %>
 
-        <h1 id='slogan' class='h6 hidden-md-down mr-auto ml-5 small'> - Splurting out Arnold Schwarzenneger movie quotes for fun!</h1>
+        <h1 class='h6 hidden-md-down mr-auto ml-5 serif italic mb-0'> - Splurting out Arnold Schwarzenneger movie quotes for fun!</h1>
 
-        <nav id='primary-navigation'>
-          <%= link_to 'Contribute', new_quote_path, :class => 'pr-2 pr-sm-4', data: { toggle: 'modal', target: '#newQuoteModal' } %>
-          <%= link_to 'About Us', about_path, :class => 'pl-2 pl-sm-4' %>
+        <nav>
+          <%= link_to 'Contribute', new_quote_path, :class => 'bold pr-2 pr-sm-4', data: { toggle: 'modal', target: '#newQuoteModal' } %>
+          <%= link_to 'About Us', about_path, :class => 'bold pl-2 pl-sm-4' %>
         </nav>
     </header>
 
@@ -53,8 +53,8 @@
     </main>
 
     <footer class='fixed d-flex flex-column align-items-center justify-content-center py-4 px-5'>
-        <%= link_to 'This isn\'t enough, I want more!', root_path, class: 'mb-auto mr-md-auto next-quote' %>
-        <p class='mt-auto ml-md-auto small'>Proudly built by Davey in Bridgend, Wales.</p>
+        <%= link_to 'This isn\'t enough, I want more!', root_path, class: 'h5 mb-auto mr-md-auto italic brand-color bold serif mb-0 next-quote' %>
+        <p class='mt-auto ml-md-auto serif italic'>Proudly built by <a class='bold brand-color' href="https://github.com/Davey-Wright">Davey</a> in Bridgend, Wales.</p>
     </footer>
 
   </body>

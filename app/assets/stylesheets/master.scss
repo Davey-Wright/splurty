@@ -1,21 +1,31 @@
 @import 'bootstrap';
 
-
+/* ----- Variables ----- */
 $brand-color: #f84342;
 $brand-color-hover: #d63231;
 $serif-font-stack: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 
 
-html {
-	font-size: 14px;
-	line-height: 1.5em;
+/* ----- Resets & Overides ----- */
+::selection {
+  background-color: rgba( 254, 69, 70, 0.7 );
+}
+
+abbr[title] {
+	text-decoration: none;
 }
 
 img {
 	display: block;
 	max-width: 100%;
 	height: auto;
-	max-height: auto;
+}
+
+
+/* ----- Links & Typography ----- */
+html {
+	font-size: 14px;
+	line-height: 1.5em;
 }
 
 a {
@@ -28,22 +38,45 @@ a:hover, a:focus, a:active {
 	outline: none;
 }
 
-::selection {
-  background-color: rgba( 254, 69, 70, 0.7 );
+.italic {
+	font-style: italic;
 }
 
-abbr[title] {
-	text-decoration: none;
+.bold {
+	font-weight: bold;
 }
 
-form {
-	width: 100%;
+.serif {
+	font-family: $serif-font-stack;
 }
 
-.quote-id {
+.brand-color {
 	color: $brand-color;
 }
 
+.quote {
+	line-height: 1.25em;
+	text-align: center;
+}
+
+#logo {
+	font-family: 'riffic-bold', sans-serif;
+	letter-spacing: 1px;
+}
+
+/* ------ Buttons ----- */
+.create {
+	background: $brand-color;
+	color: white;
+	cursor: pointer;
+}
+
+.create:hover {
+	background: $brand-color-hover;
+}
+
+
+/* ----- Layout ----- */
 .fixed {
 	position: fixed;
 	background: white;
@@ -65,62 +98,34 @@ main {
 	padding-bottom: 150px;
 }
 
-.small {
-	font-family: $serif-font-stack;
-	font-style: italic;
-	margin-bottom: 0;
+
+/* ----- Forms ----- */
+form {
+	width: 100%;
+}
+
+/* ----- Animations ----- */
+@keyframes scaleUp {
+	0% {
+		transform: scale( 0.5 );
+	}
+
+	80% {
+		transform: scale( 1.3 );
+	}
+	100% {
+		transform: scale( 1 );
+		transform: rotate( -5deg );
+	}
 }
 
 #logo {
-	font-family: 'riffic-bold', sans-serif;
-	color: $brand-color;
-	letter-spacing: 1px;
-	margin-bottom: 0;
-}
-
-#primary-navigation a {
-	font-weight: bold;
-}
-
-.blurb {
-	font-style: italic;
-	font-family: $serif-font-stack;
-}
-
-.quote {
-	line-height: 1.25em;
-	text-align: center;
-}
-
-.author {
-	font-style: italic;
-}
-
-.next-quote {
-	margin-bottom: 0;
-	color: $brand-color;
-	font-weight: bold;
-	font-size: 20px;
-	font-style: italic;
-	font-family: $serif-font-stack;
-}
-
-.create {
-	background: $brand-color;
-	color: white;
-	cursor: pointer;
-}
-
-.create:hover {
-	background: $brand-color-hover;
+	animation: .5s scaleUp;
+	transform: rotate( -5deg );
 }
 
 
-.error {
-	color: $brand-color;
-	font-weight: bold;
-}
-
+/* ----- Media Queries ----- */
 
 @include media-breakpoint-up(sm) {
   html {
