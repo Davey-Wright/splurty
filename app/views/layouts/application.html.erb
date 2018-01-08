@@ -37,7 +37,7 @@
                 <%= f.input :movie_reference, label: 'What movie is it from?', placeholder: 'Terminator' %>
             </div>
             <div class="modal-footer">
-              <%= f.submit :'Create', class: 'btn create' %>
+              <%= f.submit :'Create', class: 'btn btn-brand' %>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           <% end %>
@@ -54,7 +54,7 @@
     </main>
 
     <footer class='d-flex flex-column align-items-center justify-content-center py-4 px-5'>
-        <%= link_to 'This isn\'t enough, I want more!', root_path, :class => 'h5 mb-auto mr-md-auto italic brand-color bold serif mb-0 next-quote', data: { no_turbolink: true } %>
+        <%= link_to 'Show me another quote!', root_path, :class => 'btn btn-secondary btn-brand h5 mb-auto mr-md-auto bold serif italic mb-0', data: { no_turbolink: true } %>
         <p class='mt-auto ml-md-auto serif italic'>Proudly built by <a class='bold brand-color' href="https://github.com/Davey-Wright">Davey</a> in Bridgend, Wales.</p>
     </footer>
 

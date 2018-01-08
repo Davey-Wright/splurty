@@ -82,14 +82,16 @@ a:hover, a:focus, a:active {
 }
 
 /* ------ Buttons ----- */
-.create {
+.btn-brand {
 	background: $brand-color;
 	color: white;
 	cursor: pointer;
+	border: none;
 }
 
-.create:hover {
+.btn-brand:hover {
 	background: $brand-color-hover;
+	color: white;
 }
 
 
