@@ -81,6 +81,14 @@ a:hover, a:focus, a:active {
 	letter-spacing: 1px;
 }
 
+nav a {
+	border-bottom: 2px solid $brand-color;
+}
+
+nav a:hover {
+	border-color: $brand-color-hover;
+}
+
 /* ------ Buttons ----- */
 .btn-brand {
 	background: $brand-color;
